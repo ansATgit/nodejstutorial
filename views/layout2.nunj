@@ -1,0 +1,27 @@
+{% extends "base.nunj" %}
+{% block dataview %}
+<!-- Main component for a primary marketing message or call to action -->
+<div class="row">
+  <div class="col-sm-8">
+    <h1 class="content-title"> Blue shoe </h1>
+    <h2 class="product-price"><span class="currency">$</span><span class="value">30</span></span></h2>
+    <img
+    src="http://webmaster-deals.com/blog/tutorials/5/blue-sport-shoes-26.jpg" />
+  </div>
+  <div class="col-sm-4">
+    <div class="btn-group" data-toggle="buttons-radio">
+    <input type="checkbox" id="radio1" name="check-group" data-toggle="button">
+    <label class="btn btn-primary" for="radio1">Too big</label>
+    
+    <input type="checkbox" id="radio2" name="check-group" data-toggle="button">
+    <label class="btn btn-primary" for="radio2">Too costly</label>
+    
+    <input type="checkbox" id="radio3" name="check-group" data-toggle="button">
+    <label class="btn btn-primary" for="radio3">Bad color</label>
+    </div>
+    <div class="btn btn-default">
+      <span id="submit-button"> Submit rating </span>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -8,15 +8,18 @@
 </div>
 <div class="row">
   <div class="col-sm-9">
-    <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-info">
-            <input type="radio" id="q156" name="rating[25]" value="1" /> Like
-        </label> 
-        <label class="btn btn-info">
-            <input type="radio" id="q157" name="rating[25]" value="2" />
-            Dislike
-        </label> 
+  <form>
+    <div class="btn-group" data-toggle="buttons-radio">
+    <input type="radio" id="radio1" name="radio-group" data-toggle="button">
+    <label class="btn btn-primary" for="radio1">Like</label>
+    
+    <input type="radio" id="radio2" name="radio-group" data-toggle="button">
+    <label class="btn btn-primary" for="radio2">Dislike</label>
     </div>
+  </form>
+  <div class="btn btn-default">
+    <span id="submit-button"> Submit rating </span>
+  </div>
   </div>
 </div>
 {% endblock %}

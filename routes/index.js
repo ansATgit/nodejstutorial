@@ -11,4 +11,8 @@ router.get('/layout1', function(req, res, next) {
   res.render('layout1', { title: 'Layout 1' });
 });
 
+router.get('/layout2', function(req, res, next) {
+  res.render('layout2', { title: 'Layout 2' });
+});
+
 module.exports = router;
