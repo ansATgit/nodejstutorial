@@ -1,0 +1,22 @@
+{% extends "base.nunj" %}
+{% block dataview %}
+<!-- Main component for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <h1 class="content-title"> Blue shoe </h1>
+  <img
+  src="http://webmaster-deals.com/blog/tutorials/5/blue-sport-shoes-26.jpg" />
+</div>
+<div class="row">
+  <div class="col-sm-9">
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-info">
+            <input type="radio" id="q156" name="rating[25]" value="1" /> Like
+        </label> 
+        <label class="btn btn-info">
+            <input type="radio" id="q157" name="rating[25]" value="2" />
+            Dislike
+        </label> 
+    </div>
+  </div>
+</div>
+{% endblock %}
