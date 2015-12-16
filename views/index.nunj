@@ -11,3 +11,7 @@
   </p>
 </div>
 {% endblock %}
+
+{% block loadscripts %}
+  <script src="javascripts/index.js"></script>
+{% endblock %}

@@ -21,19 +21,26 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <select class="form-control" id="selectedLayout">
+                    <option value="none" selected>Select Layout</option>
+                    <option value="layout1">Layout 1</option>
+                    <option value="layout2">Layout 2</option>
+                  </select>
+                </div>
+              </form>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
             <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="dataview">
       {% block dataview %}
       {% endblock %}
     </div> <!-- /container -->
@@ -51,6 +58,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    {% block loadscripts %}
+    {% endblock %}
   </body>
 </html>
 
